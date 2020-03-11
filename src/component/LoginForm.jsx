@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactFormInputValidation from "react-form-input-validation";
+import { NavLink } from 'react-router-dom';
 
 class LoginForm extends Component {
     constructor(props) {
@@ -51,7 +52,7 @@ class LoginForm extends Component {
                                         <div className="sub-btn">
                                             <input type="submit" className="sbutn" defaultValue="Login" />
                                         </div>
-                                        <div className="newuser"><i className="fa fa-user" aria-hidden="true" /> New User? <a href="#.">Register Here</a></div>
+                                        <div className="newuser"><i className="fa fa-user" aria-hidden="true" /> New User? <NavLink to={'/register'}>Register Here</NavLink></div>
                                     </form>
                                 </div>
                             </div>

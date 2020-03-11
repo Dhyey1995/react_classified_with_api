@@ -9,7 +9,7 @@ export default class Header extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 col-sm-12">
-                            <div className="logo"><a href="index.html"><img src="./assets/images/logo.png" alt="" /></a></div>
+                            <div className="logo"><NavLink to={'/'}><img src="./assets/images/logo.png" alt="" /></NavLink></div>
                         </div>
                         <div className="col-md-7 col-sm-9">
                             <div className="navigationwrape">

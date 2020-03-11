@@ -6,7 +6,7 @@ export default class PageHeader extends Component {
         return (
             <div className="inner-heading">
                 <div className="container">
-                    <h1>Login</h1>
+                    <h1>{ this.props.page_title }</h1>
                 </div>
             </div>
         );

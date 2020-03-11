@@ -11,7 +11,7 @@ export default class componentName extends Component {
                         <div className="col-md-4 col-sm-6 col-xs-6">
                             <div className="user-wrap">
                                 <div className="login-btn"><NavLink to={'/login'}>Login</NavLink></div>
-                                <div className="register-btn"><a href="register.html">Register</a></div>
+                                <div className="register-btn"><NavLink to={'/register'}>Register</NavLink></div>
                                 <div className="clearfix" />
                             </div>
                         </div>

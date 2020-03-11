@@ -3,29 +3,28 @@ import HeaderTopBar from '../component/HeaderTopBar';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import PageHeader from '../component/PageHeader';
-import LoginForm from '../component/LoginForm';
+import RegisterForm from '../component/RegisterForm';
 
-
-export default class LoginPage extends Component {
+export default class RegisterPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            login_url: null
+            register_url: null
         };
     }
     componentDidMount() {
         let page_url = this.props.match.path ;
         this.setState({
-            login_url: page_url
+            register_url: page_url
         });
     }
     render() {
         return (
             <React.Fragment>
                 <HeaderTopBar />
-                <Header page_url={this.state.login_url} />
-                <PageHeader page_title={'Login'} />
-                <LoginForm />
+                <Header page_url={this.state.register_url} />
+                <PageHeader page_title={'Register'} />
+                <RegisterForm />
                 <Footer />
             </React.Fragment>
         );

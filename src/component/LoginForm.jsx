@@ -38,16 +38,12 @@ class LoginForm extends Component {
                                 <div className="formint conForm">
                                     <form onSubmit={this.form.handleSubmit}>
                                         <div className="input-wrap">
-                                            <input type="text" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Email" className="form-control" />
-                                            <label className="error">
-                                                {this.state.errors.email ? this.state.errors.email : ""}
-                                            </label>
+                                            <input onBlur={this.form.handleBlurEvent} type="text" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Email" className="form-control" />
+                                            <span className="validation_error">{this.state.errors.email ? this.state.errors.email : ""}</span>
                                         </div>
                                         <div className="input-wrap">
-                                            <input type="text" name="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" className="form-control" />
-                                            <label className="error">
-                                                {this.state.errors.password ? this.state.errors.password : ""}
-                                            </label>
+                                            <input onBlur={this.form.handleBlurEvent} type="text" name="password" value={this.state.password} onChange={this.handleChange} placeholder="Password" className="form-control" />
+                                            <span className="validation_error">{this.state.errors.password ? this.state.errors.password : ""}</span>
                                         </div>
                                         <div className="sub-btn">
                                             <input type="submit" className="sbutn" defaultValue="Login" />
